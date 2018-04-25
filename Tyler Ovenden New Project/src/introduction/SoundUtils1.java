@@ -112,7 +112,7 @@ public class SoundUtils1 {
 		  }
 
   public static void main(String[] args) throws Exception {
-	//  SoundUtils1.warp(10);	  
+	  SoundUtils1.warp(10);	  
 	// SoundUtils1.laser(10);
 
 	  
@@ -120,6 +120,6 @@ public class SoundUtils1 {
     SoundUtils1.warp(10);
     Thread.sleep(1000);
     SoundUtils1.bang(); */
-	  SoundUtils1.bang();
+	 // SoundUtils1.bang();
   }
 }
