@@ -37,7 +37,7 @@ public class SoundUtils1 {
     }
     sdl.drain();
     sdl.stop();
-    sdl.close();
+    sdl.close(); 
   }
 
   public static void warp(int repeat)
