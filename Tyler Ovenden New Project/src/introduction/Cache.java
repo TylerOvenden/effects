@@ -16,7 +16,7 @@ public class Cache {
 			while(len != -1) {
 				cacheSize += len;
 				len = previous.getSamples(moveBuffer, length);
-				
+				 
 			}
 			o("required cache size in samples: " + cacheSize);
 	
