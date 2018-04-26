@@ -21,8 +21,11 @@ public class Chorus {
 	boolean initializationComplete;
 	short[] localBuffer;
 	int len;
+
+	int delayInMs;
+
 	int numberOfChannels;
-	
+	int delayOffset = (delayInMs * sampleRate * numberOfChannels)/1000;
 	protected int processMonoSamples(short[] localBuffer, short[] buffer, int len) {
 		for(int i = 0; i<len; i++) {
 			int inputSample = (int) localBuffer[i];

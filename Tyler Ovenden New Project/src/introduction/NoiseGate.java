@@ -24,7 +24,8 @@ public class NoiseGate {
 		for(int i=0; i<len;i++) {
 			
 		 sample = (double)buffer[i];
-			if(Math.abs(sample)>= thresholdValue) {
+		 
+		 	if(Math.abs(sample)>= thresholdValue) {
 				releaseCount++;
 				releaseCount %= (calcReleaseCount + 1);
 				if(attackExpired) {
@@ -41,22 +42,23 @@ public class NoiseGate {
 						
 					}
 				}
-				
-			} else {
+			}	
+			 else {
 				attackCount++;
 				attackCount = calcAttackCount;
 			}
 			
-			sample *= btRatio;
-			sample *= gain;
+		 		sample *= btRatio;
 			
-			if(sample > 32767.0)
+		}
+		 	sample *= gain;
+			
+		 	if(sample > 32767.0)
 				sample = 32767;
 			else if (sample < -32768.0) 
 				sample = -32768.0;
 		}
-
-		return len;
+//	return len;
 	}
 
 
