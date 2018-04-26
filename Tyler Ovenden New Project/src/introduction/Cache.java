@@ -5,7 +5,7 @@ public class Cache {
 	short[] moveBuffer;
 	short[] cacheBuffer;
 	int cacheBufferOffset;
- 	Double previous;
+
 	
 	public int getSamples(short [] buffer, int length) {
 		if(cacheSize == 0) {
@@ -13,9 +13,10 @@ public class Cache {
 			
 			int len = 0;
 			
+			Cache previous = null;
 			while(len != -1) {
 				cacheSize += len;
-				len = previous.getSamples(moveBuffer, length);
+				len = previous .getSamples(moveBuffer, length);
 				 
 			}
 			o("required cache size in samples: " + cacheSize);

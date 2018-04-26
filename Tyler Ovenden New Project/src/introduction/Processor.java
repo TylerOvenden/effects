@@ -2,12 +2,13 @@ package introduction;
 
 public class Processor {
 	int adjValue;
-	Double previous;
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
 	public int getSamples(short [] buffer, int length) {
+		Processor previous = null;
 		int len = previous.getSamples(buffer,length);
 		if(getByPass())
 			return len;
