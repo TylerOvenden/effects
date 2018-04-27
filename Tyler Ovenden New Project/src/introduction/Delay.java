@@ -7,6 +7,11 @@ public class Delay {
 	int sampleRate;
 	short[] localBuffer;
 	int numberOfChannels;
+	int readIndex;
+	int wetLevel;
+	int dryLevel;
+	int delayBufferSize;
+	short[] delayBuffer;
 	boolean intializationComplete;
 	int delayOffset = (delayInMs * sampleRate * numberOfChannels)/1000;
 	private Delay previous;
@@ -25,7 +30,23 @@ public class Delay {
 			return previous.getSamples(buffer,length);
 		int len = previous.getSamples(localBuffer, length);
 		
-		for(int i = 0;i < len;i++)
+		for(int i = 0;i < len;i++) {
+			int inputSample = (int) localBuffer[i];
+			int delaySample = (int) delayBuffer[readIndex++];
+			int outputSample = ((inputSample * dryLevel)/100)+ ((delaySample * wetLevel)/100);
+			
+			if(outputSample >32767)
+				outputSample = 32767;
+			if(outputSample<-32768)
+				outputSample = -32768;
+			
+			delayBuffer[writeIndex++] = (short) inputSample;
+			
+			readIndex %= delayBufferSize;
+			writeIndex %= delayBufferSize;
+			
+		}
+		return len;
 	}
 
 	private boolean getByPass() {
