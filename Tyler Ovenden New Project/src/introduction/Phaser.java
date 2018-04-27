@@ -20,6 +20,8 @@ public class Phaser {
 	int maxWp;
 	int minWp;
 	int step;
+	boolean initializationComplete;
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -63,11 +65,28 @@ public class Phaser {
 				currentStep = 1.0/step;
 			else if(wp < minWp)
 				currentStep = step;
-			
+	 	
 		}
 		
 		return len;
 	}
 
+	public int getSamples(short[]buffer, int length) {
+		Phaser previous = null;
+		int len = previous.getSamples(buffer, length);
+	
+		if(getByPass()|| !initializationComplete)
+			return len;
+		
+		return processMonoSamples(buffer,len);
+	}
+
+	private boolean getByPass() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
+	
 }
 
