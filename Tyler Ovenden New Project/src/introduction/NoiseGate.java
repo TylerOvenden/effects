@@ -20,10 +20,10 @@ public class NoiseGate {
 		
 		if(getByPass() || !intializationComplete)
 			return len;
-		double sample = 0;
+		
 		for(int i=0; i<len;i++) {
 			
-		 sample = (double)buffer[i];
+		double sample = (double)buffer[i];
 		 
 		 	if(Math.abs(sample)>= thresholdValue) {
 				releaseCount++;
@@ -44,22 +44,36 @@ public class NoiseGate {
 				}
 			}	
 			 else {
-				attackCount++;
-				attackCount = calcAttackCount;
+				if(attackExpired) {
+					if(!limiting)
+						sample *= atRatio;
+					releaseCount--;
+					if(releaseCount <=0) {
+						attackExpired = false;
+						attackCount = calcAttackCount;
+					}
+					
+				}else {
+					attackCount++;
+					attackCount%= (calcAttackCount +1);
+					
+				}
+				sample *= btRatio;
 			}
-			
-		 		sample *= btRatio;
-			
-		}
 		 	sample *= gain;
 			
 		 	if(sample > 32767.0)
 				sample = 32767;
 			else if (sample < -32768.0) 
 				sample = -32768.0;
+		 	
+		 	buffer[i] = (short)sample;
+			
+		}
+		return len;	 	
 		}
 //	return len;
-	}
+	
 
 
 	private boolean getByPass() {
