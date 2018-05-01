@@ -13,6 +13,10 @@ public class PitchShifter {
 	int sweep;
 	int blendA;
 	int blendB;
+	int feedbackLevel;
+	int writeIndex; 
+	int dryLevel;
+	int wetLevel;
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -44,7 +48,15 @@ public class PitchShifter {
 				delaySampleB = (dsBHigh*(1.0-sweep) )+(dsBLow* sweep );
 			}	
 			double outputSample = (delaySampleA * blendA) +(delaySampleB *blendB);
-			}
+			delayBuffer[writeIndex] = (short)(inputSample + ((outputSample * feedbackLevel)/100));
+		
+			outputSample = ((inputSample * dryLevel)/100)+ ((outputSample * wetLevel)/100);
+			
+			if(outputSample > 32767)
+				outputSample = 32767;
+			if(outputSample < -32768)
+		
+		}
 		}
 	
 
