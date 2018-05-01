@@ -28,6 +28,12 @@ public class Phaser {
 
 	}
 	
+	public enum limits{
+		
+		
+	}
+	
+	
 	protected int processMonoSamples(short[] buffer, int len) {
 		
 		for(int i = 0; i <len; i++) {
