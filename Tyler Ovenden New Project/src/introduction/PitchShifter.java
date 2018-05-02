@@ -39,20 +39,23 @@ public class PitchShifter {
 	
 	public int getSamples(short[] buffer, int length) {
 		PitchShifter previous = null;
+		//don't perform processing until initialization is complete and bypass not active
 		if(getByPass() || !initializationComplete)
 			return previous.getSamples(buffer,length);
-	
+		//read number of samples from previous stage
 		int len =  previous.getSamples(localBuffer, length);
 		double delaySampleA, delaySampleB;
 		
 		for(int i = 0; i < len; i++){
-			
+		
 			long inputSample = localBuffer[i];
+			//take 4 samples at a time for the interpolation and blending
 			long dsALow = delayBuffer[readIndexALow];
 			long dsAHigh = delayBuffer[readIndexAHigh];
 			long dsBLow = delayBuffer[readIndexBLow];
 			long dsBHigh = delayBuffer[readIndexBHigh];
 			
+			//do the linear interpolation
 			if(sweepUp) {
 				delaySampleA = (dsAHigh * sweep)+(dsALow *(1.0-sweep));
 				delaySampleB = (dsBHigh * sweep)+(dsBLow *(1.0-sweep));
@@ -61,9 +64,14 @@ public class PitchShifter {
 				delaySampleA = (dsAHigh*(1.0-sweep) )+(dsALow* sweep );
 				delaySampleB = (dsBHigh*(1.0-sweep) )+(dsBLow* sweep );
 			}	
+			//combine delay channels A & B with appropriate 
 			double outputSample = (delaySampleA * blendA) +(delaySampleB *blendB);
+			
+			
 			delayBuffer[writeIndex] = (short)(inputSample + ((outputSample * feedbackLevel)/100));
 		
+			writeIndex = (writeIndex + 1)% delayBufferSize;
+			
 			outputSample = ((inputSample * dryLevel)/100)+ ((outputSample * wetLevel)/100);
 			
 			if(outputSample > 32767)
@@ -71,6 +79,7 @@ public class PitchShifter {
 			if(outputSample < -32768)
 				outputSample = -32768;
 			
+			//store output sample in outgoing sample
 			buffer[i] = (short) outputSample;
 			
 			if(crossFadeCount != 0) {
