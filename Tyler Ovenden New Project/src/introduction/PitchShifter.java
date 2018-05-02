@@ -1,22 +1,34 @@
-package introduction;
+ package introduction;
 
 public class PitchShifter {
 
 	boolean initializationComplete;
 	short[] localBuffer;
 	short[] delayBuffer;
+	short[] fadeA;
+	short[] fadeB;
+	short[] fadeOut;
+	short[] fadeIn;
 	int readIndexALow;
 	int readIndexAHigh;
 	int readIndexBLow;
 	int readIndexBHigh;
 	boolean sweepUp;
-	int sweep;
-	int blendA;
-	int blendB;
+	double sweep;
+	double blendA;
+	double blendB;
 	int feedbackLevel;
 	int writeIndex; 
-	int dryLevel;
-	int wetLevel;
+	double dryLevel;
+	double wetLevel;
+	int crossFadeCount;
+	int numberOfChannels;
+	double step;
+	int delayBufferSize;
+	int activeCount;
+	int numberOfCrossFadeSamples;
+	int activeSampleCount;
+	boolean channelA;
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -32,8 +44,8 @@ public class PitchShifter {
 		double delaySampleA, delaySampleB;
 		
 		for(int i = 0; i < len; i++){
-			long inputSample = localBuffer[i];
 			
+			long inputSample = localBuffer[i];
 			long dsALow = delayBuffer[readIndexALow];
 			long dsAHigh = delayBuffer[readIndexAHigh];
 			long dsBLow = delayBuffer[readIndexBLow];
@@ -55,8 +67,52 @@ public class PitchShifter {
 			if(outputSample > 32767)
 				outputSample = 32767;
 			if(outputSample < -32768)
+				outputSample = -32768;
+			
+			buffer[i] = (short) outputSample;
+			
+			if(crossFadeCount != 0) {
+				crossFadeCount--;
+				blendA = fadeA[crossFadeCount];
+				blendB = fadeB[crossFadeCount];
+			}
+			//update sweep value for each pass if processing
+			
+			if((numberOfChannels ==1) || (i+1) % 2 ==0 )
+				sweep += step;
 		
+			if(sweepUp) {
+				//upward frequency change
+				//advance indices to reduce delay
+				readIndexALow = readIndexAHigh;
+				readIndexAHigh = (readIndexAHigh +1)%delayBufferSize; 
+				readIndexBLow = readIndexBHigh;
+				readIndexBHigh = (readIndexBHigh +1)%delayBufferSize; 
+			
+				if(sweep<1.0) {
+					//no overflow
+					continue;
+				}
+				sweep = 0.0;
+				readIndexALow = readIndexAHigh;
+				readIndexAHigh = (readIndexAHigh +1)%delayBufferSize; 
+				readIndexBLow = readIndexBHigh;
+				readIndexBHigh = (readIndexBHigh +1)%delayBufferSize; 
+				
+				if(activeCount ==0) {
+					crossFadeCount = numberOfCrossFadeSamples;
+					activeCount = activeSampleCount;
+					
+					fadeA = fadeOut;
+					fadeB = fadeIn;
+				} else {
+					channelA = true;
+					readIndexAHigh = (writeIndex + AudioConstants.SAMPLEBUFFERSIZE) % delayBufferSize;
+				}
+			}
+			
 		}
+
 		}
 	
 
