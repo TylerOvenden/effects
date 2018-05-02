@@ -29,6 +29,8 @@ public class PitchShifter {
 	int numberOfCrossFadeSamples;
 	int activeSampleCount;
 	boolean channelA;
+	private static final double twelvethRootOfTwo = Math.pow(2, 1.0/12.0);
+	int numberOfDelaySamples;
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -156,8 +158,35 @@ public class PitchShifter {
 		return len;
 	}
 
+	public void setPitchShift(int pitchShift) {
+		//values are in half steps (semitones) in the range -12 to 12 corresponding -/+ octave for a range of 2 octaves
+		//determine what direction the sweep is going
+		sweepUp = (pitchShift >= 0);
+		setIndices();
+		double newStep = 1.0;
+		if(pitchShift == 0) 
+			step = 0;
+		else {
+			for(int i = 0; i< Math.abs(pitchShift);i++) {
+				if(pitchShift >0)
+					newStep *= twelvethRootOfTwo;
+				else 
+					newStep /= twelvethRootOfTwo;
+			}
+			step = Math.abs(newStep -1.0);
+		}
+		sweep = 0.0;
+		crossFadeCount = 0;
+		activeSampleCount = numberOfDelaySamples - (int)(numberOfCrossFadeSamples *(newStep -1.0)-2);
+		}
+	
 		
 	
+
+	private void setIndices() {
+		// TODO Auto-generated method stub
+		
+	}
 
 	private boolean getByPass() {
 		// TODO Auto-generated method stub
