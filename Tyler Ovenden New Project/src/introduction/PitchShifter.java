@@ -102,18 +102,61 @@ public class PitchShifter {
 				if(activeCount ==0) {
 					crossFadeCount = numberOfCrossFadeSamples;
 					activeCount = activeSampleCount;
-					
+			
+					if(channelA) {
+					channelA = !channelA;
+					readIndexBHigh = (writeIndex + AudioConstants.SAMPLEBUFFERSIZE) % delayBufferSize;
 					fadeA = fadeOut;
 					fadeB = fadeIn;
-				} else {
-					channelA = true;
+					}	else {
+					channelA = !channelA;
 					readIndexAHigh = (writeIndex + AudioConstants.SAMPLEBUFFERSIZE) % delayBufferSize;
+					fadeA = fadeIn;
+					fadeB = fadeOut;
+						
+					}
+				} else {
+					//downward frequency change
+					
+					if(sweep <1.0) {
+						readIndexALow = readIndexAHigh;
+						readIndexAHigh = (readIndexAHigh +1)%delayBufferSize; 
+						readIndexBLow = readIndexBHigh;
+						readIndexBHigh = (readIndexBHigh +1)%delayBufferSize; 
+						
+						continue;
+					}
+					//octave exceeded don't bump indices so the delay is increased
+					sweep = 0.0;
+					
+					if(activeCount-1 == 0) {
+						crossFadeCount = numberOfCrossFadeSamples;
+						activeCount = activeSampleCount;
+						if(channelA) {
+							channelA = !channelA;
+							readIndexBHigh = (writeIndex + AudioConstants.SAMPLEBUFFERSIZE) % delayBufferSize;
+							fadeA = fadeOut;
+							fadeB = fadeIn;
+							
+						}
+						else {
+							channelA = !channelA;
+							readIndexAHigh = (writeIndex + AudioConstants.SAMPLEBUFFERSIZE) % delayBufferSize;
+							fadeA = fadeIn;
+							fadeB = fadeOut;
+								
+						}
+						
+					}
+					
 				}
 			}
 			
 		}
+		return len;
+	}
 
-		}
+		
 	
 
 	private boolean getByPass() {
