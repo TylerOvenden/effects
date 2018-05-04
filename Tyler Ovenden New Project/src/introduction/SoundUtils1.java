@@ -91,16 +91,16 @@ public class SoundUtils1 {
 		    sdl.start();
 
 		    byte[] buf = new byte[1];
-		    Random r = new Random(4);
+		    Random r = new Random(9);
 		    boolean silence = true;
-		    for (int i=0 ; i < 8122 ; i++) {
+		    for (int i=0 ; i < 8000 ; i++) {
 		    //for (int i=0 ; i < 8000 ; i++) {
-		      while(r.nextInt() % 10 != 0) {
+		      while(r.nextInt() % 13 != 0) {
 		          buf[0] =
 		            silence ? 0 :
 		              (byte)Math.abs(r.nextInt() %
 		                  (int)(1. + 50. * (8. + Math.cos(((double)i)
-		                      * Math.PI / 10000.))));
+		                      * 123 / 10000.))));
 		          i++;
 		          sdl.write(buf,0,1);
 		      }
@@ -112,7 +112,7 @@ public class SoundUtils1 {
 		  }
 
   public static void main(String[] args) throws Exception {
-	  SoundUtils1.warp(10);	  
+	//  SoundUtils1.warp(10);	  
 	// SoundUtils1.laser(10);
 
 	  
@@ -120,6 +120,6 @@ public class SoundUtils1 {
     SoundUtils1.warp(10);
     Thread.sleep(1000);
     SoundUtils1.bang(); */
-	 // SoundUtils1.bang();
+	  SoundUtils1.bang();
   }
 }
