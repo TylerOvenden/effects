@@ -82,13 +82,16 @@ public class PitchShifter {
 			//store output sample in outgoing sample
 			buffer[i] = (short) outputSample;
 			
+			//update cross fade blending 
 			if(crossFadeCount != 0) {
 				crossFadeCount--;
 				blendA = fadeA[crossFadeCount];
 				blendB = fadeB[crossFadeCount];
 			}
-			//update sweep value for each pass if processing
 			
+			
+			//update sweep value for each pass if processing mono
+			// and every other pass if processing stereo 
 			if((numberOfChannels ==1) || (i+1) % 2 ==0 )
 				sweep += step;
 		
@@ -104,6 +107,7 @@ public class PitchShifter {
 					//no overflow
 					continue;
 				}
+				//
 				sweep = 0.0;
 				readIndexALow = readIndexAHigh;
 				readIndexAHigh = (readIndexAHigh +1)%delayBufferSize; 
@@ -162,7 +166,7 @@ public class PitchShifter {
 					
 				}
 			}
-			
+			 
 		}
 		return len;
 	}
