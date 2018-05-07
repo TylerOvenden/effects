@@ -29,6 +29,7 @@ public class PitchShifter {
 	int numberOfCrossFadeSamples;
 	int activeSampleCount;
 	boolean channelA;
+	//constant by which one tone differs from the next when the interval is a halftone 
 	private static final double twelvethRootOfTwo = Math.pow(2, 1.0/12.0);
 	int numberOfDelaySamples;
 	
@@ -143,6 +144,7 @@ public class PitchShifter {
 					}
 					//octave exceeded don't bump indices so the delay is increased
 					sweep = 0.0;
+					
 					
 					if(activeCount-1 == 0) {
 						crossFadeCount = numberOfCrossFadeSamples;
