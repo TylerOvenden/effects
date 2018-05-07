@@ -180,8 +180,10 @@ public class PitchShifter {
 		setIndices();
 		double newStep = 1.0;
 		if(pitchShift == 0) 
+		//if pitchshift is 0 short circuit calculations 
 			step = 0;
 		else {
+			// step is rate at which samples read out
 			for(int i = 0; i< Math.abs(pitchShift);i++) {
 				if(pitchShift >0)
 					newStep *= twelvethRootOfTwo;
@@ -190,7 +192,9 @@ public class PitchShifter {
 			}
 			step = Math.abs(newStep -1.0);
 		}
+		//reset the values whenever pitch shift value changes
 		sweep = 0.0;
+		
 		crossFadeCount = 0;
 		activeSampleCount = numberOfDelaySamples - (int)(numberOfCrossFadeSamples *(newStep -1.0)-2);
 		}
