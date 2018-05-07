@@ -13,8 +13,11 @@ public class Delay {
 	int delayBufferSize;
 	short[] delayBuffer;
 	boolean intializationComplete;
+	public static final int PEAK = 32767;
+	public static final int BOTTOM = -32768;
 	int delayOffset = (delayInMs * sampleRate * numberOfChannels)/1000;
 	private Delay previous;
+
 	
 	delayBufferSize = AudioConstants.SAMPLEBUFFERSIZE + delayOffset;
 	
@@ -35,10 +38,10 @@ public class Delay {
 			int delaySample = (int) delayBuffer[readIndex++];
 			int outputSample = ((inputSample * dryLevel)/100)+ ((delaySample * wetLevel)/100);
 			
-			if(outputSample >32767)
-				outputSample = 32767;
-			if(outputSample<-32768)
-				outputSample = -32768;
+			if(outputSample >PEAK)
+				outputSample = PEAK;
+			if(outputSample<BOTTOM)
+				outputSample = BOTTOM;
 			
 			delayBuffer[writeIndex++] = (short) inputSample;
 			

@@ -29,6 +29,9 @@ public class PitchShifter {
 	int numberOfCrossFadeSamples;
 	int activeSampleCount;
 	boolean channelA;
+	public static final int PEAK = 32767;
+	public static final int BOTTOM = -32768;
+
 	//constant by which one tone differs from the next when the interval is a halftone 
 	private static final double twelvethRootOfTwo = Math.pow(2, 1.0/12.0);
 	int numberOfDelaySamples;
@@ -75,10 +78,10 @@ public class PitchShifter {
 			
 			outputSample = ((inputSample * dryLevel)/100)+ ((outputSample * wetLevel)/100);
 			
-			if(outputSample > 32767)
-				outputSample = 32767;
-			if(outputSample < -32768)
-				outputSample = -32768;
+			if(outputSample > PEAK)
+				outputSample = PEAK;
+			if(outputSample < BOTTOM)
+				outputSample = BOTTOM;
 			
 			//store output sample in outgoing sample
 			buffer[i] = (short) outputSample;

@@ -2,7 +2,7 @@ package introduction;
 
 public class Distortion {
 	
-	int threshold;
+	public static final int THRESHOLD = 23;
 	int gain;
 	
 	
@@ -17,10 +17,10 @@ public class Distortion {
 		
 		for(int i = 0; i < len; i++) {
 			int sample = buffer[i];
-			if(sample > threshold) 
-				sample = threshold;
-			if(sample < -threshold)
-				sample = -threshold;
+			if(sample > THRESHOLD) 
+				sample = THRESHOLD;
+			if(sample < -THRESHOLD)
+				sample = -THRESHOLD;
 			buffer[i] = (short)(sample * gain);
 				
 		}

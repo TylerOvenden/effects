@@ -12,7 +12,8 @@ public class NoiseGate {
 	int attackCount;
 	int calcAttackCount;
 	int btRatio;
-	int gain;
+	double gain;
+	
 	
 	public int getSamples(short[] buffer, int length) {
 		NoiseGate previous = null;
