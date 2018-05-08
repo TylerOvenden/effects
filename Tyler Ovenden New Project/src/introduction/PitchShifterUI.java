@@ -284,7 +284,7 @@ public class PitchShifterUI extends BaseUI implements CloseableFrameIF {
 
 	private RoundLED onLED;
 	private RoundLED bypassLED;
-
+ 
 	private SquareButton bypassButton;
 }
 
