@@ -14,6 +14,16 @@ public abstract class AbstractAudio {
 	public static final int MONITOR		= 3;
 	public static final int SINK		= 4;
 	
+	// Class data
+	public AbstractAudio previous;
+	public AbstractAudio next;
+	private String name;
+	private int type;
+	private int samplingRate;
+	private int numberOfChannels;
+	private boolean samplingRateFrozen;
+	private boolean numberOfChannelsFrozen;
+	private boolean byPass;
 	/**
 	 * AbstractAudio class constructor
 	 *
@@ -450,14 +460,5 @@ public abstract class AbstractAudio {
 		System.out.println(s);
 	}
 
-	// Class data
-	public AbstractAudio previous;
-	public AbstractAudio next;
-	private String name;
-	private int type;
-	private int samplingRate;
-	private int numberOfChannels;
-	private boolean samplingRateFrozen;
-	private boolean numberOfChannelsFrozen;
-	private boolean byPass;
+
 }
