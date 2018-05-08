@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 03/21/99
 
-package craigl.processors;
+package introduction;
 
 import java.awt.*;
 import java.awt.event.*;

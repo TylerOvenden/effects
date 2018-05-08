@@ -117,7 +117,7 @@ public abstract class AbstractAudio {
 	}
 	
 	/**
-	 * This method must be iplemented by all devices that extend
+	 * This method must be implemented by all devices that extend
 	 * the AbstractAudio class. This is the method by which audio
 	 * samples are moved between device stages. Call the getSamples()
 	 * method on the device previous to this device in the signal path
