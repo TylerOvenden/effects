@@ -95,12 +95,12 @@ public class SoundUtils1 {
 		    boolean silence = true;
 		    for (int i=0 ; i < 8000 ; i++) {
 		    //for (int i=0 ; i < 8000 ; i++) {
-		      while(r.nextInt() % 13 != 0) {
+		      while(r.nextInt() % 13 != 2 || r.nextInt() % 13 == 10) {
 		          buf[0] =
 		            silence ? 0 :
 		              (byte)Math.abs(r.nextInt() %
-		                  (int)(1. + 50. * (8. + Math.cos(((double)i)
-		                      * 123 / 10000.))));
+		                  (int)(1. + 50. * 100* (8. + Math.cos(((double)i)
+		                      * Math.PI / 10000.))));
 		          i++;
 		          sdl.write(buf,0,1);
 		      }
