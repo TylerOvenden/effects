@@ -8,6 +8,12 @@ package audiostuff.craigl.jmf20.devices;
 import java.io.*;
 import java.util.*;
 
+// The java media packages
+import javax.media.*;
+import javax.media.format.*;
+import javax.media.format.audio.*;
+import javax.media.protocol.*;
+
 
 public class JMFFileBase {
 
