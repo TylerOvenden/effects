@@ -2,18 +2,18 @@
 // Written by: Craig A. Lindley
 // Last Update: 05/02/99
 
-package craigl.filereader;
+package audiostuff.craigl.filereader;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
-import craigl.beans.blinker.*;
-import craigl.beans.displays.*;
-import craigl.beans.leds.*;
-import craigl.au.*;
-import craigl.wave.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.beans.displays.*;
+import audiostuff.craigl.beans.leds.*;
+import audiostuff.craigl.au.*;
+import audiostuff.craigl.wave.*;
 
 public class FileReaderWithUI extends Frame
 		implements ReadCompleteIF {

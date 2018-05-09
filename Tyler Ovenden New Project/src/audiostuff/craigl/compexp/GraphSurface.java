@@ -3,13 +3,13 @@
 // Written by: Craig A. Lindley
 // Last Update: 06/26/99
 
-package craigl.compexp;
+package audiostuff.craigl.compexp;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Vector;
-import craigl.processors.*;
-import craigl.uiutils.*;
+import audiostuff.craigl.processors.*;
+import audiostuff.craigl.uiutils.*;
 
 
 // Surface on which compressor/expander graph is drawn

@@ -3,11 +3,11 @@
 // Written by: Craig A. Lindley
 // Last Update: 05/19/99
 
-package craigl.compexp;
+package audiostuff.craigl.compexp;
 
 import java.awt.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
 
 public class LabeledGraphSurface extends Panel {
 	
