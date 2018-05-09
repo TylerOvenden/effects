@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 03/18/99
 
-package craigl.beans.pots;
+package audiostuff.craigl.beans.pots;
 
 
 // This class extends Pot to provide for integer values other than 0..100

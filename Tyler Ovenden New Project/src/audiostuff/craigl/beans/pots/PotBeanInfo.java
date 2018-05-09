@@ -1,6 +1,6 @@
 // PotBeanInfo Class
 
-package craigl.beans.pots;
+package audiostuff.craigl.beans.pots;
 
 import java.awt.*;
 import java.beans.*;

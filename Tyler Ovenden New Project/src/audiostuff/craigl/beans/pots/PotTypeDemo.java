@@ -2,11 +2,11 @@
 // Written by: Craig A. Lindley
 // Last Update: 03/21/99
 
-package craigl.beans.pots;
+package audiostuff.craigl.beans.pots;
 
 import java.awt.*;
 import java.awt.event.*;
-import craigl.beans.displays.IntLEDDisplay;
+import audiostuff.craigl.beans.displays.IntLEDDisplay;
 
 public class PotTypeDemo extends Frame {
 

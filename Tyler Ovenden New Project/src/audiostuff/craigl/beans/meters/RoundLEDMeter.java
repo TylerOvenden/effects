@@ -2,13 +2,14 @@
 // Written by: Craig A. Lindley
 // Last Update: 04/01/99
 
-package craigl.beans.meters;
+package audiostuff.craigl.beans.meters;
 
 import java.awt.*;
 import java.util.*;
 
-import craigl.beans.blinker.Blinker;
-import craigl.beans.leds.*;
+import audiostuff.craigl.beans.leds.LabeledLED;
+import audiostuff.craigl.beans.blinker.Blinker;
+import audiostuff.craigl.beans.leds.*;
 
 public class RoundLEDMeter extends Meter {
 
