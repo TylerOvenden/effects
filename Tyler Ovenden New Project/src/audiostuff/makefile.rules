@@ -1,0 +1,17 @@
+# Audio Stuff Makefile Rule File
+# Written by: Craig Lindley
+# Last Update: 11/07/99
+
+SHELL = bash
+
+# uncomment one of the below
+# sj is much faster than javac
+#JAVAC   = sj -classpath $$CLASSPATH
+JAVAC  = javac -classpath $$CLASSPATH
+
+CLASSFILES = \
+	$(JAVA_FILES:.java=.class)
+
+# Rule for compiling a normal java file
+%.class: %.java
+	$(JAVAC) $<
