@@ -5,9 +5,6 @@
 package introduction;
 
 import java.awt.Rectangle;
-import craigl.beans.blinker.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
 
 public class DistortionWithUI extends AbstractAudio
 						implements AudioUIIF {
