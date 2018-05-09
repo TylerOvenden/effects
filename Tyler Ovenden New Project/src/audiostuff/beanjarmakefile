@@ -1,0 +1,28 @@
+# Bean Makefile which creates jar files
+# Written by: Craig Lindley
+# Last Update: 03/21/99
+
+include makefile.rules
+
+MKFILES= \
+	blinker.mk \
+	buttons.mk \
+	datagen.mk \
+	displays.mk \
+	leds.mk \
+	meters.mk \
+	pots.mk
+	
+all:
+	@for file in $(MKFILES) ; do \
+	    echo $(MAKE) -f $$file all ; \
+	    $(MAKE) -f $$file all || exit 1; \
+	done
+
+clobber:
+	@for file in $(MKFILES) ; do \
+	    echo $(MAKE) -f $$file clobber ; \
+	    $(MAKE) -f $$file clobber ; \
+	done
+	rm -rf manifest.tmp
+
