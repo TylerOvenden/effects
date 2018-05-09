@@ -2,18 +2,11 @@
 // Written by: Craig A. Lindley
 // Last Update: 06/02/99
 
-package craigl.jmf20.devices;
+package audiostuff.craigl.jmf20.devices;
 
 //import java.awt.*;
 import java.io.*;
 import java.util.*;
-
-// The java media packages
-import javax.media.*;
-import javax.media.control.*;
-import javax.media.format.*;
-import javax.media.format.audio.*;
-import javax.media.protocol.*;
 
 
 public class JMFFileBase {

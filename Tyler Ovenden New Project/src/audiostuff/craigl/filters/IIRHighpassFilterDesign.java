@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 06/28/99
 
-package craigl.filters;
+package audiostuff.craigl.filters;
 
 // The IIR highpass filter designed here has unity gain 
 

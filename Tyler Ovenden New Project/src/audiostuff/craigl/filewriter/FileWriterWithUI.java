@@ -2,19 +2,19 @@
 // Written by: Craig A. Lindley
 // Last Update: 08/29/99
 
-package craigl.filewriter;
+package audiostuff.craigl.filewriter;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 
-import craigl.au.*;
-import craigl.beans.blinker.*;
-import craigl.beans.displays.*;
-import craigl.beans.leds.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
-import craigl.wave.*;
+import audiostuff.craigl.au.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.beans.displays.*;
+import audiostuff.craigl.beans.leds.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
+import audiostuff.craigl.wave.*;
 
 
 public class FileWriterWithUI extends CloseableFrame
@@ -222,10 +222,10 @@ public class FileWriterWithUI extends CloseableFrame
 
 				if (fileType == AUTYPE) {
 					// Instantiate AUWrite and write the file
-					fwif = new AUWrite(fileName, sampleRate, numberOfChannels);
+					fwif = (FileWriterIF) new AUWrite(fileName, sampleRate, numberOfChannels);
 				}	else	{
 					// Instantiate WaveWrite and write the file
-					fwif = new WaveWrite(fileName, sampleRate, numberOfChannels);
+					fwif = (FileWriterIF) new WaveWrite(fileName, sampleRate, numberOfChannels);
 				}
 				// Write the file 
 				fwif.writeFile(aa);

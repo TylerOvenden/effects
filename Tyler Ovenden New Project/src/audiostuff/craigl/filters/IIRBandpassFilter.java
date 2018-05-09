@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 09/03/98
 
-package craigl.filters;
+package audiostuff.craigl.filters;
 
 // Optimized IIR bandpass filter with only 4 multiplies per sample
 // Used for each band of the graphic equalizer.

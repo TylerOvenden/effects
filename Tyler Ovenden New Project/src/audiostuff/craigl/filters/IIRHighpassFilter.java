@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 09/03/98
 
-package craigl.filters;
+package audiostuff.craigl.filters;
 
 // Optimized IIR highpass filter used as shelving EQ
 

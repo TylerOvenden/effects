@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 07/04/99
 
-package craigl.filters;
+package audiostuff.craigl.filters;
 
 // Base class for all IIR filters 
 
