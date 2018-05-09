@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 11/07/99
 
-package craigl.beans.pots;
+package audiostuff.craigl.beans.pots;
 
 import java.awt.*;
 import java.awt.event.*;
