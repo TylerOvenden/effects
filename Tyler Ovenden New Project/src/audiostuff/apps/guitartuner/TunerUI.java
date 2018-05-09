@@ -6,11 +6,11 @@ package audiostuff.apps.guitartuner;
 
 import java.awt.*;
 import java.awt.event.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
-import craigl.beans.blinker.*;
-import craigl.beans.leds.*;
-import craigl.beans.meters.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.beans.leds.*;
+import audiostuff.craigl.beans.meters.*;
 
 public class TunerUI extends BaseUI implements CloseableFrameIF {
 	

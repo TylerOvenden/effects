@@ -5,11 +5,11 @@
 package audiostuff.apps.guitartuner;
 
 import java.awt.*;
-import craigl.beans.leds.LabeledLED;
-import craigl.filters.*;
-import craigl.scope.*;
-import craigl.utils.*;
-import craigl.winrecorder.WinRecorder;
+import audiostuff.craigl.beans.leds.LabeledLED;
+import audiostuff.craigl.filters.*;
+import audiostuff.craigl.scope.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.winrecorder.WinRecorder;
 
 public class Tuner extends AbstractAudio {
 

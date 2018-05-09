@@ -2,10 +2,10 @@
 // Written by: Craig A. Lindley
 // Last Update: 04/01/99
 
-package craigl.beans.leds;
+package audiostuff.craigl.beans.leds;
 
 import java.awt.*;
-import craigl.beans.blinker.Blinker;
+import audiostuff.craigl.beans.blinker.Blinker;
 
 /**
  * A LabeledLED consists of a label and a RoundLED. This combination can

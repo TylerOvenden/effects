@@ -2,10 +2,10 @@
 // Written by: Craig A. Lindley
 // Last Update: 04/01/99
 
-package craigl.beans.meters;
+package audiostuff.craigl.beans.meters;
 
 import java.awt.*;
-import craigl.beans.blinker.Blinker;
+import audiostuff.craigl.beans.blinker.Blinker;
 
 public class MeterDemo extends Frame {
 
@@ -63,11 +63,7 @@ public class MeterDemo extends Frame {
 		
 		// Create the round led meter
 		Blinker blinker = new Blinker(100);
-		roundLEDMeter = new RoundLEDMeter(
-								7, false, Meter.MODEPEAK, 
-								Meter.DEFAULTFONTNAME,
-								Meter.DEFAULTFONTSTYLE,
-								Meter.DEFAULTFONTSIZE,
+		roundLEDMeter = new RoundLEDMeter(7, false, Meter.MODEPEAK, Meter.DEFAULTFONTNAME, Meter.DEFAULTFONTSTYLE,Meter.DEFAULTFONTSIZE,
 								"Leds", true, true, SECTIONLABELS, true,
 								0, NUMBEROFSECTIONS, PANELCOLOR, TEXTCOLOR,
 								blinker);

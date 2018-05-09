@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 04/01/99
 
-package craigl.beans.meters;
+package audiostuff.craigl.beans.meters;
 
 import java.awt.*;
 import java.awt.event.*;
