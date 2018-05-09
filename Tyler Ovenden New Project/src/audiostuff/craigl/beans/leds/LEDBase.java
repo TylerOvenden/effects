@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 03/16/99
 
-package craigl.beans.leds;
+package audiostuff.craigl.beans.leds;
 
 import java.awt.*;
 import java.awt.event.*;
