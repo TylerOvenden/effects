@@ -2,14 +2,14 @@
 // Written by: Craig A. Lindley
 // Last Update: 06/05/99
 
-package craigl.jmf20.devices;
+package audiostuff.craigl.jmf20.devices;
 
 import java.awt.*;
 import java.awt.event.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
-import craigl.beans.blinker.*;
-import craigl.beans.leds.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.beans.leds.*;
 
 public class JMFPlayerUI extends BaseUI implements CloseableFrameIF {
 

@@ -6,10 +6,10 @@
 // Written by: Craig A. Lindley
 // Last Update: 06/09/99
 
-package craigl.jmf20.media.datasink.intfc;
+package audiostuff.craigl.jmf20.media.datasink.intfc;
 
-import craigl.jmf20.devices.*;
-import craigl.utils.*;
+import audiostuff.craigl.jmf20.devices.*;
+import audiostuff.craigl.utils.*;
 import java.io.*;
 
 // The java media packages

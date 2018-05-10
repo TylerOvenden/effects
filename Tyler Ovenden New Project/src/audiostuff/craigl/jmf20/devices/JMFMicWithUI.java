@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 06/14/99
 
-package craigl.jmf20.devices;
+package audiostuff.craigl.jmf20.devices;
 
 import java.awt.*;
 import java.io.*;
@@ -15,9 +15,9 @@ import javax.media.format.*;
 import javax.media.format.audio.*;
 import javax.media.protocol.*;
 
-import craigl.beans.blinker.*;
-import craigl.utils.*;
-import craigl.jmf20.media.datasink.intfc.Handler;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.jmf20.media.datasink.intfc.Handler;
 
 public class JMFMicWithUI extends JMFFileBase implements JMFFileCallBackIF, AudioUIIF {
 

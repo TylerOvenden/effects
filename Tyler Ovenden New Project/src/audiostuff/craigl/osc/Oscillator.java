@@ -2,10 +2,10 @@
 // Written by: Craig A. Lindley
 // Last Update: 04/22/99
 
-package craigl.osc;
+package audiostuff.craigl.osc;
 
 import java.util.Random;
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 // NOTE: 16 bit PCM data has a min value of -32768 (8000H)
 //       and a max value of 32767 (7FFFFH).

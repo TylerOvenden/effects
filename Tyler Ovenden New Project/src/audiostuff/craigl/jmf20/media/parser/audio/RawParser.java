@@ -3,9 +3,9 @@
 // Last Update: 06/05/99
 
 
-package craigl.jmf20.media.parser.audio;
+package audiostuff.craigl.jmf20.media.parser.audio;
 
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 import java.io.IOException;
 
 import javax.media.*;

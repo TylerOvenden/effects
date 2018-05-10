@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 06/05/99
 
-package craigl.jmf20.devices;
+package audiostuff.craigl.jmf20.devices;
 
 import java.io.*;
 
@@ -13,9 +13,9 @@ import javax.media.format.*;
 import javax.media.format.audio.*;
 import javax.media.protocol.*;
 
-import craigl.beans.blinker.*;
-import craigl.utils.*;
-import craigl.jmf20.media.protocol.intfc.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.jmf20.media.protocol.intfc.*;
 
 /**
  * JMFPlayerWithUI class

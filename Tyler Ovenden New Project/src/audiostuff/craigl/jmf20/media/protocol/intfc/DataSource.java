@@ -4,9 +4,9 @@
 // Written by: Craig A. Lindley
 // Last Update: 06/07/99
 
-package craigl.jmf20.media.protocol.intfc;
+package audiostuff.craigl.jmf20.media.protocol.intfc;
 
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 // The java media packages
 import javax.media.*;

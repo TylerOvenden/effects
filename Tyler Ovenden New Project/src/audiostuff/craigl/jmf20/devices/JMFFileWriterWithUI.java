@@ -2,23 +2,16 @@
 // Written by: Craig A. Lindley
 // Last Update: 06/09/99
 
-package craigl.jmf20.devices;
+package audiostuff.craigl.jmf20.devices;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 
-// The java media packages
-import javax.media.*;
-import javax.media.control.*;
-import javax.media.format.*;
-import javax.media.format.audio.*;
-import javax.media.protocol.*;
-
-import craigl.au.*;
-import craigl.beans.blinker.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
+import audiostuff.craigl.au.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
 
 public class JMFFileWriterWithUI extends AbstractAudio {
 
