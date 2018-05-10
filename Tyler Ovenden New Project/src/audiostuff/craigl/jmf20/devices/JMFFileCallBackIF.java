@@ -4,7 +4,7 @@
 
 // Used to signal when a read of an audio file has been completed
 
-package craigl.jmf20.devices;
+package audiostuff.craigl.jmf20.devices;
 
 public interface JMFFileCallBackIF {
 

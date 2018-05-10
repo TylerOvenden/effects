@@ -2,10 +2,10 @@
 // Written by: Craig A. Lindley
 // Last Update: 04/25/99
 
-package craigl.wave;
+package audiostuff.craigl.wave;
 
 import java.io.*;
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 public class WaveRead extends AudioFileDecoder {
 

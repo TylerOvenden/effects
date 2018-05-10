@@ -2,10 +2,10 @@
 // Written by: Craig A. Lindley
 // Last Update: 09/03/98
 
-package craigl.au;
+package audiostuff.craigl.au;
 
 import java.io.*;
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 public class AUWrite implements FileWriterIF {
 

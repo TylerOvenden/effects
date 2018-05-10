@@ -2,10 +2,10 @@
 // Written by: Craig A. Lindley
 // Last Update: 05/02/99
 
-package craigl.au;
+package audiostuff.craigl.au;
 
 import java.io.*;
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 public class AUWriteDevice extends AbstractAudio { 
 

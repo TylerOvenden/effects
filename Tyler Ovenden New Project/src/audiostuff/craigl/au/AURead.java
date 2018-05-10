@@ -2,11 +2,11 @@
 // Written by: Craig A. Lindley
 // Last Update: 04/25/99
 
-package craigl.au;
+package audiostuff.craigl.au;
 
 import java.io.*;
-import craigl.utils.*;
-import craigl.wave.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.wave.*;
 
 public class AURead extends AudioFileDecoder {
 
