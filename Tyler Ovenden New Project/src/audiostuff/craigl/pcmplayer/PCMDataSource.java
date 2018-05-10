@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 07/08/98
 
-package craigl.pcmplayer;
+package audiostuff.craigl.pcmplayer;
 
 import java.io.*;
 import javax.media.*;

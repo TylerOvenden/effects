@@ -2,11 +2,11 @@
 // Written by: Craig A. Lindley
 // Last Update: 08/02/98
 
-package craigl.pcmplayer;
+package audiostuff.craigl.pcmplayer;
 
 import javax.media.*;
 import java.io.*;
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 public class _PCMPlayer extends ControllerAdapter {
 

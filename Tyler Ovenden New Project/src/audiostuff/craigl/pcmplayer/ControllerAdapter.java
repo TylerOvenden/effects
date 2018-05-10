@@ -2,7 +2,7 @@
 // from JMF manual
 // Last Update: 08/02/98
 
-package craigl.pcmplayer;
+package audiostuff.craigl.pcmplayer;
 
 import javax.media.*;
 

@@ -8,6 +8,12 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 
+// The java media packages
+import javax.media.*;
+import javax.media.control.*;
+import javax.media.format.*;
+import javax.media.protocol.*;
+
 import audiostuff.craigl.au.*;
 import audiostuff.craigl.beans.blinker.*;
 import audiostuff.craigl.utils.*;

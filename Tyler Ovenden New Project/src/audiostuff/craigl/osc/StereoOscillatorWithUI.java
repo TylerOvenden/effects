@@ -2,15 +2,15 @@
 // Written by: Craig A. Lindley
 // Last Update: 03/21/99
 
-package craigl.osc;
+package audiostuff.craigl.osc;
 
 import java.awt.*;
 import java.awt.event.*;
-import craigl.beans.displays.*;
-import craigl.beans.leds.*;
-import craigl.beans.pots.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
+import audiostuff.craigl.beans.displays.*;
+import audiostuff.craigl.beans.leds.*;
+import audiostuff.craigl.beans.pots.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
 
 public class StereoOscillatorWithUI extends BaseUI
 	implements CloseableFrameIF, NegotiationCompleteIF {
