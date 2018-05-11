@@ -2,11 +2,11 @@
 // Written by: Craig A. Lindley
 // Last Update: 05/16/99
 
-package craigl.processors;
+package audiostuff.craigl.processors;
 
 import java.awt.*;
-import craigl.beans.blinker.*;
-import craigl.utils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.utils.*;
 
 public class ChorusWithUI extends AbstractAudio implements AudioUIIF {
 

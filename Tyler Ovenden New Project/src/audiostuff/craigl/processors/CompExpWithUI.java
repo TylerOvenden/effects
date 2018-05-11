@@ -7,13 +7,13 @@
 // The hard knee version is contained in the file CompExpWithUIHard.java.
 // It should be renamed to CompExpWithUI.java to be used.
 
-package craigl.processors;
+package audiostuff.craigl.processors;
 
 import java.util.*;
 import java.awt.Rectangle;
-import craigl.beans.blinker.*;
-import craigl.compexp.*;
-import craigl.utils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.compexp.*;
+import audiostuff.craigl.utils.*;
 
 public class CompExpWithUI extends AbstractAudio implements AudioUIIF {
 

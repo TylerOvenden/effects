@@ -2,18 +2,18 @@
 // Written by: Craig A. Lindley
 // Last Update: 06/26/99
 
-package craigl.processors;
+package audiostuff.craigl.processors;
 
 import java.awt.*;
 import java.awt.event.*;
-import craigl.compexp.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
-import craigl.beans.blinker.*;
-import craigl.beans.displays.*;
-import craigl.beans.pots.*;
-import craigl.beans.leds.*;
-import craigl.beans.buttons.*;
+import audiostuff.craigl.compexp.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.beans.displays.*;
+import audiostuff.craigl.beans.pots.*;
+import audiostuff.craigl.beans.leds.*;
+import audiostuff.craigl.beans.buttons.*;
 
 public class CompExpUI extends BaseUI implements CloseableFrameIF {
 

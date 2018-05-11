@@ -6,12 +6,12 @@
 // of a hard transition between the no compression and compression states.
 // The soft knee version is contained in the file CompExpWithUI.java.
 
-package craigl.processors;
+package audiostuff.craigl.processors;
 
 import java.awt.Rectangle;
-import craigl.beans.blinker.*;
-import craigl.compexp.*;
-import craigl.utils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.compexp.*;
+import audiostuff.craigl.utils.*;
 
 public class CompExpWithUIHard extends AbstractAudio implements AudioUIIF {
 

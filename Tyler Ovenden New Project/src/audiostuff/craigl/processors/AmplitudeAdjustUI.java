@@ -2,16 +2,16 @@
 // Written by: Craig A. Lindley
 // Last Update: 08/23/98
 
-package craigl.processors;
+package audiostuff.craigl.processors;
 
 import java.awt.*;
 import java.awt.event.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
-import craigl.beans.blinker.*;
-import craigl.beans.pots.*;
-import craigl.beans.leds.*;
-import craigl.beans.buttons.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.beans.pots.*;
+import audiostuff.craigl.beans.leds.*;
+import audiostuff.craigl.beans.buttons.*;
 
 public class AmplitudeAdjustUI extends BaseUI 
 		implements CloseableFrameIF {

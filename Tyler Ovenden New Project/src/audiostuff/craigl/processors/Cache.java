@@ -2,9 +2,9 @@
 // Written by: Craig A. Lindley
 // Last Update: 01/08/99
 
-package craigl.processors;
+package audiostuff.craigl.processors;
 
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 public class Cache extends AbstractAudio {
 

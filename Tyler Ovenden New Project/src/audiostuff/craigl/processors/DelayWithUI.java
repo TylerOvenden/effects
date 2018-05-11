@@ -2,11 +2,11 @@
 // Written by: Craig A. Lindley
 // Last Update: 11/11/98
 
-package craigl.processors;
+package audiostuff.craigl.processors;
 
 import java.awt.*;
-import craigl.beans.blinker.*;
-import craigl.utils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.utils.*;
 
 public class DelayWithUI extends AbstractAudio implements AudioUIIF {
 
