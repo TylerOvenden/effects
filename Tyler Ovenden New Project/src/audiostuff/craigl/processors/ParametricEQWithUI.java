@@ -2,12 +2,12 @@
 // Written by: Craig A. Lindley
 // Last Update: 07/05/99
 
-package craigl.processors;
+package audiostuff.craigl.processors;
 
 import java.awt.*;
-import craigl.beans.blinker.*;
-import craigl.filters.*;
-import craigl.utils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.filters.*;
+import audiostuff.craigl.utils.*;
 
 /*
 This parametric equalizer processor features three filter sections.

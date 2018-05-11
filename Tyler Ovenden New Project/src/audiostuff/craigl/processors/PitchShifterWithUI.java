@@ -2,11 +2,11 @@
 // Written by: Craig A. Lindley
 // Last Update: 01/20/99
 
-package craigl.processors;
+package audiostuff.craigl.processors;
 
 import java.awt.*;
-import craigl.beans.blinker.*;
-import craigl.utils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.utils.*;
 
 /*
 The algorithm for this pitch shifter was adapted from the

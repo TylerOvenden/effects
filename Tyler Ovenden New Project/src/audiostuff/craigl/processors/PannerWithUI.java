@@ -2,12 +2,12 @@
 // Written by: Craig A. Lindley
 // Last Update: 01/24/99
 
-package craigl.processors;
+package audiostuff.craigl.processors;
 
 import java.awt.Rectangle;
-import craigl.beans.blinker.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
 
 public class PannerWithUI extends AbstractAudio
 	implements AudioUIIF {

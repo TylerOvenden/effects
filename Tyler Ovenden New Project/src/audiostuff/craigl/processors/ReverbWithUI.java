@@ -2,12 +2,12 @@
 // Written by: Craig A. Lindley
 // Last Update: 11/11/98
 
-package craigl.processors;
+package audiostuff.craigl.processors;
 
 import java.awt.Rectangle;
-import craigl.beans.blinker.*;
-import craigl.reverb.*;
-import craigl.utils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.reverb.*;
+import audiostuff.craigl.utils.*;
 
 public class ReverbWithUI extends AbstractAudio implements AudioUIIF {
 
