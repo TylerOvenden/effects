@@ -3,7 +3,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 01/24/99
 
-package craigl.processors;
+package audiostuff.craigl.processors;
 
 import java.awt.*;
 import java.awt.event.*;
