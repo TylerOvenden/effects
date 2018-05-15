@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 03/02/99
 
-package craigl.utils;
+package audiostuff.craigl.utils;
 
 public abstract class AbstractAudio {
 
