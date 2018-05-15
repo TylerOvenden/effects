@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 09/13/98
 
-package craigl.utils;
+package audiostuff.craigl.utils;
 
 import java.io.*;
 

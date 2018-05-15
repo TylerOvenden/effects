@@ -4,7 +4,7 @@
 
 // A simple assertion mechanism for asserting validity of arguments
 
-package craigl.utils;
+package audiostuff.craigl.utils;
 
 public class Assert {
 

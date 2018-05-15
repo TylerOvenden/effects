@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 08/04/98
 
-package craigl.utils;
+package audiostuff.craigl.utils;
 
 public interface FileWriterIF {
 

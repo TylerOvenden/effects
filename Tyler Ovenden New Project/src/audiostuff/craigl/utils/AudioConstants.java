@@ -5,7 +5,7 @@
 // Various constants used throughout the code. A change to
 // these and a recompile will ripple through the code.
 
-package craigl.utils;
+package audiostuff.craigl.utils;
 
 import java.awt.Color;
 

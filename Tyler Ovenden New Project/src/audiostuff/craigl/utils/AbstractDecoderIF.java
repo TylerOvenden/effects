@@ -1,4 +1,4 @@
-package craigl.utils;
+package audiostuff.craigl.utils;
 
 public interface AbstractDecoderIF {
 

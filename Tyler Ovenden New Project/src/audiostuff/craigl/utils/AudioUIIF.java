@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 07/12/98
 
-package craigl.utils;
+package audiostuff.craigl.utils;
 
 import java.awt.Rectangle;
 

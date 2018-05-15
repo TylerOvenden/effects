@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 08/19/98
 
-package craigl.utils;
+package audiostuff.craigl.utils;
 
 public interface NegotiationCompleteIF {
 

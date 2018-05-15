@@ -4,7 +4,7 @@
 
 // Used to signal when a read of an audio file has been completed
 
-package craigl.utils;
+package audiostuff.craigl.utils;
 
 public interface ReadCompleteIF {
 
