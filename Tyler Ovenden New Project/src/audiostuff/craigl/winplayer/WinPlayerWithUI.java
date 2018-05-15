@@ -2,14 +2,14 @@
 // Written by: Craig A. Lindley
 // Last Update: 12/07/98
 
-package craigl.winplayer;
+package audiostuff.craigl.winplayer;
 
 import java.awt.*;
 import java.awt.event.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
-import craigl.beans.blinker.*;
-import craigl.beans.leds.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.beans.leds.*;
 
 public class WinPlayerWithUI extends CloseableFrame
 	implements CloseableFrameIF {

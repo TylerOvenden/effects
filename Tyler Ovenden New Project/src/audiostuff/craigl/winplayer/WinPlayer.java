@@ -1,8 +1,8 @@
 // WinPlayer.java
 
-package craigl.winplayer;
+package audiostuff.craigl.winplayer;
 
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 /**
  * WinPlayer class

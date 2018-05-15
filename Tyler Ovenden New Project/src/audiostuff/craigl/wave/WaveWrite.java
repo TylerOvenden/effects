@@ -2,11 +2,11 @@
 // Written by: Craig A. Lindley
 // Last Update: 04/25/99
 
-package craigl.wave;
+package audiostuff.craigl.wave;
 
 import java.io.*;
-import craigl.utils.*;
-import craigl.au.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.au.*;
 
 public class WaveWrite implements FileWriterIF {
 

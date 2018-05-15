@@ -2,14 +2,14 @@
 // Written by: Craig A. Lindley
 // Last Update: 08/26/98
 
-package craigl.winrecorder;
+package audiostuff.craigl.winrecorder;
 
 import java.awt.*;
 import java.awt.event.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
-import craigl.beans.blinker.*;
-import craigl.beans.leds.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.beans.leds.*;
 
 public class WinRecorderWithUI extends CloseableFrame
 	implements AudioUIIF, RecorderIF, CloseableFrameIF {

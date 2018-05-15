@@ -2,9 +2,9 @@
 // Written by: Craig A. Lindley
 // Last Update: 01/18/99
 
-package craigl.winrecorder;
+package audiostuff.craigl.winrecorder;
 
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 public class WinRecorder extends AbstractAudio {
 
