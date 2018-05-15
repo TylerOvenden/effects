@@ -11,6 +11,7 @@ import audiostuff.craigl.uiutils.*;
 import audiostuff.craigl.beans.blinker.*;
 import audiostuff.craigl.beans.displays.*;
 import audiostuff.craigl.beans.pots.*;
+import audiostuff.craigl.reverb.SchroederReverb;
 import audiostuff.craigl.beans.leds.*;
 import audiostuff.craigl.beans.buttons.*;
 
