@@ -3,7 +3,7 @@
 // Last Update: 08/02/98
 
 
-package craigl.uiutils;
+package audiostuff.craigl.uiutils;
 
 import java.awt.*;
 import java.awt.event.*;

@@ -1,4 +1,4 @@
-package craigl.uiutils;
+package audiostuff.craigl.uiutils;
 
 import java.awt.*;
 

@@ -2,9 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 08/02/98
 
-package craigl.uiutils;
-
-import java.awt.*;
+package audiostuff.craigl.uiutils;
 
 public interface CloseableFrameIF {
 

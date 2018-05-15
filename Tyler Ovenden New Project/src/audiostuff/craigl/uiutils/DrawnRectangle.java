@@ -1,7 +1,7 @@
-package craigl.uiutils;
+package audiostuff.craigl.uiutils;
 
 import java.awt.*;
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 /**
  * A Rectangle which draws itself inside of a Component.<p>

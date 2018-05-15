@@ -2,21 +2,21 @@
 // Written by: Craig A. Lindley
 // Last Update: 06/09/99
 
-package craigl.test;
+package audiostuff.craigl.test;
 
 import java.awt.*;
-import craigl.beans.blinker.*;
-import craigl.utils.*;
-import craigl.filereader.*;
-import craigl.filewriter.*;
-import craigl.jmf20.devices.*;
-import craigl.winplayer.*;
-import craigl.winrecorder.*;
-import craigl.pcmplayer.*;
-import craigl.processors.*;
-import craigl.osc.*;
-import craigl.scope.*;
-import craigl.spectrumanalyzer.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.filereader.*;
+import audiostuff.craigl.filewriter.*;
+import audiostuff.craigl.jmf20.devices.*;
+import audiostuff.craigl.winplayer.*;
+import audiostuff.craigl.winrecorder.*;
+import audiostuff.craigl.pcmplayer.*;
+import audiostuff.craigl.processors.*;
+import audiostuff.craigl.osc.*;
+import audiostuff.craigl.scope.*;
+import audiostuff.craigl.spectrumanalyzer.*;
 
 public class AudioTest {
 

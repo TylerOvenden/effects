@@ -2,13 +2,13 @@
 // Written by: Craig A. Lindley
 // Last Update: 04/04/99
 
-package craigl.uiutils;
+package audiostuff.craigl.uiutils;
 
 import java.awt.*;
-import craigl.utils.*;
-import craigl.beans.pots.*;
-import craigl.beans.leds.*;
-import craigl.beans.buttons.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.beans.pots.*;
+import audiostuff.craigl.beans.leds.*;
+import audiostuff.craigl.beans.buttons.*;
 
 /**
  * This class provides some base functionality required by many of the
