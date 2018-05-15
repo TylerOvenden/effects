@@ -2,14 +2,14 @@
 // Written by: Craig A. Lindley
 // Last Update: 04/04/99
 
-package frontpanels;
+package audiostuff.frontpanels;
 
 import java.awt.*;
 
-import craigl.beans.blinker.*;
-import craigl.beans.datagen.*;
-import craigl.beans.meters.*;
-import craigl.uiutils.*;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.beans.datagen.*;
+import audiostuff.craigl.beans.meters.*;
+import audiostuff.craigl.uiutils.*;
 
 
 public class StereoVUMetersFrontPanel extends CloseableFrame implements CloseableFrameIF {

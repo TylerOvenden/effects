@@ -2,13 +2,13 @@
 // Written by: Craig A. Lindley
 // Last Update: 04/04/99
 
-package frontpanels;
+package audiostuff.frontpanels;
 
 import java.awt.*;
 
-import craigl.beans.pots.*;
-import craigl.uiutils.*;
-import craigl.utils.AudioConstants;
+import audiostuff.craigl.beans.pots.*;
+import audiostuff.craigl.uiutils.*;
+import audiostuff.craigl.utils.AudioConstants;
 
 
 public class EQFrontPanel extends BaseUI implements CloseableFrameIF {

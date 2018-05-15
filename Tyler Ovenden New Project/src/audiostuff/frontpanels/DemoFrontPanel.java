@@ -2,19 +2,19 @@
 // Written by: Craig A. Lindley
 // Last Update: 04/04/99
 
-package frontpanels;
+package audiostuff.frontpanels;
 
 import java.awt.*;
 
-import craigl.utils.AudioConstants;
-import craigl.beans.blinker.*;
-import craigl.beans.buttons.*;
-import craigl.beans.datagen.*;
-import craigl.beans.displays.*;
-import craigl.beans.leds.*;
-import craigl.beans.meters.*;
-import craigl.beans.pots.*;
-import craigl.uiutils.*;
+import audiostuff.craigl.utils.AudioConstants;
+import audiostuff.craigl.beans.blinker.*;
+import audiostuff.craigl.beans.buttons.*;
+import audiostuff.craigl.beans.datagen.*;
+import audiostuff.craigl.beans.displays.*;
+import audiostuff.craigl.beans.leds.*;
+import audiostuff.craigl.beans.meters.*;
+import audiostuff.craigl.beans.pots.*;
+import audiostuff.craigl.uiutils.*;
 
 
 public class DemoFrontPanel extends BaseUI implements CloseableFrameIF {
