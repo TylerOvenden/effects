@@ -2,9 +2,9 @@
 // Written by: Craig A. Lindley
 // Last Update: 09/09/98
 
-package craigl.reverb;
+package audiostuff.craigl.reverb;
 
-import craigl.utils.*;
+import audiostuff.craigl.utils.AudioConstants;
 
 public class CombFilter {
 

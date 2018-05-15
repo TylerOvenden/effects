@@ -2,10 +2,9 @@
 // Written by: Craig A. Lindley
 // Last Update: 09/11/98
 
-package craigl.reverb;
+package audiostuff.craigl.reverb;
 
-import craigl.utils.*;
-import craigl.processors.ReverbUI;
+import audiostuff.craigl.processors.ReverbUI;
 
 /*
 This reverb module is called a Schroeder reverb because

@@ -2,12 +2,12 @@
 // Written by: Craig A. Lindley
 // Last Update: 11/07/99
 
-package craigl.scope;
+package audiostuff.craigl.scope;
 
 import java.awt.*;
 import java.awt.event.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
 
 public class ScopeUI extends BaseUI implements CloseableFrameIF {
 

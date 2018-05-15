@@ -2,10 +2,10 @@
 // Written by: Craig A. Lindley
 // Last Update: 02/25/99
 
-package craigl.scope;
+package audiostuff.craigl.scope;
 
 import java.awt.*;
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 
 public class Scope extends AbstractAudio {
