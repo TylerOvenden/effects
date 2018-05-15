@@ -2,11 +2,11 @@
 // Written by: Craig A. Lindley
 // Last Update: 03/07/99
 
-package craigl.spectrumanalyzer;
+package audiostuff.craigl.spectrumanalyzer;
 
 import java.awt.*;
-import craigl.scope.*;
-import craigl.utils.*;
+import audiostuff.craigl.scope.*;
+import audiostuff.craigl.utils.*;
 
 
 public class SpectrumAnalyzer extends AbstractAudio {

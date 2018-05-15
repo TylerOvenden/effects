@@ -2,13 +2,13 @@
 // Written by: Craig A. Lindley
 // Last Update: 11/07/99
 
-package craigl.spectrumanalyzer;
+package audiostuff.craigl.spectrumanalyzer;
 
 import java.awt.*;
 import java.awt.event.*;
-import craigl.scope.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
+import audiostuff.craigl.scope.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.uiutils.*;
 
 public class SpectrumAnalyzerUI extends BaseUI implements CloseableFrameIF {
 

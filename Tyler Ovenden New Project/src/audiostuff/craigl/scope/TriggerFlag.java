@@ -1,4 +1,4 @@
-package craigl.scope;
+package audiostuff.craigl.scope;
 
 public class TriggerFlag {
 	

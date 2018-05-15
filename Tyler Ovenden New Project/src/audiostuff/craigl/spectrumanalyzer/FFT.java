@@ -2,7 +2,7 @@
 // Java implementation by: Craig A. Lindley
 // Last Update: 02/27/99
 
-package craigl.spectrumanalyzer;
+package audiostuff.craigl.spectrumanalyzer;
 
 
 /* libfft.c - fast Fourier transform library

@@ -2,7 +2,7 @@
 // Written by: Craig A. Lindley
 // Last Update: 02/28/99
 
-package craigl.scope;
+package audiostuff.craigl.scope;
 
 import java.awt.*;
 
