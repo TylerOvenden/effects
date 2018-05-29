@@ -14,6 +14,7 @@ import java.io.*;
 
 // The java media packages
 import javax.media.*;
+import javax.media.datasink.DataSinkListener;
 import javax.media.format.*;
 import javax.media.protocol.*;
 import javax.media.util.*;
@@ -216,5 +217,16 @@ public class Handler extends AbstractAudio implements DataSink {
 	private JMFFileCallBackIF cbif;
 	private boolean playbackStartSignalled;
 	private boolean EOMMode = false;
+	@Override
+	public void addDataSinkListener(DataSinkListener arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeDataSinkListener(DataSinkListener arg0) {
+		// TODO Auto-generated method stub
+		
+	}
 }
 

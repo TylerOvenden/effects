@@ -2,13 +2,13 @@
 // Written by: Craig A. Lindley
 // Last Update: 02/13/99
 
-package apps.phrasesampler;
+package audiostuff.apps.phrasesampler;
 
 import java.awt.Color;
-import craigl.utils.*;
-import craigl.processors.PitchShifterWithUI;
-import craigl.winrecorder.WinRecorder;
-import craigl.winplayer.WinPlayer;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.processors.PitchShifterWithUI;
+import audiostuff.craigl.winrecorder.WinRecorder;
+import audiostuff.craigl.winplayer.WinPlayer;
 
 /*
 Half speed playback at normal pitch is accomplished by using the
