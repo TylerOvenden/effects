@@ -10,7 +10,6 @@ import java.io.*;
 import javax.media.*;
 import javax.media.control.*;
 import javax.media.format.*;
-import javax.media.format.audio.*;
 import javax.media.protocol.*;
 
 import audiostuff.craigl.beans.blinker.*;
