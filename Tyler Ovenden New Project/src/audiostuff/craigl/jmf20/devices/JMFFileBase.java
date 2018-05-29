@@ -5,14 +5,19 @@
 package audiostuff.craigl.jmf20.devices;
 
 //import java.awt.*;
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
+import java.util.Vector;
 
 // The java media packages
-import javax.media.*;
-import javax.media.format.*;
-import javax.media.format.audio.*;
-import javax.media.protocol.*;
+import javax.media.ControllerClosedEvent;
+import javax.media.ControllerErrorEvent;
+import javax.media.ControllerEvent;
+import javax.media.ControllerListener;
+import javax.media.Format;
+import javax.media.PackageManager;
+import javax.media.PlugInManager;
+import javax.media.Processor;
+import javax.media.protocol.ContentDescriptor;
 
 
 public class JMFFileBase {

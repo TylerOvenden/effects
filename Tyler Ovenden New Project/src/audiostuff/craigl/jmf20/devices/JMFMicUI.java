@@ -2,24 +2,34 @@
 // Written by: Craig A. Lindley
 // Last Update: 11/07/99
 
-package craigl.jmf20.devices;
+package audiostuff.craigl.jmf20.devices;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import java.util.*;
-import craigl.utils.*;
-import craigl.uiutils.*;
-import craigl.beans.blinker.*;
-import craigl.beans.displays.*;
-import craigl.beans.leds.*;
+import java.awt.Button;
+import java.awt.Checkbox;
+import java.awt.CheckboxGroup;
+import java.awt.Color;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import java.awt.Insets;
+import java.awt.Panel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import java.util.Vector;
 
 // The java media packages
-import javax.media.*;
-import javax.media.control.*;
-import javax.media.format.*;
-import javax.media.format.audio.*;
-import javax.media.protocol.*;
+import javax.media.CaptureDeviceInfo;
+import javax.media.MediaLocator;
+
+import audiostuff.craigl.beans.blinker.Blinker;
+import audiostuff.craigl.beans.leds.RoundLED;
+import audiostuff.craigl.uiutils.BaseUI;
+import audiostuff.craigl.uiutils.Box;
+import audiostuff.craigl.uiutils.CloseableFrame;
+import audiostuff.craigl.uiutils.CloseableFrameIF;
+import audiostuff.craigl.utils.AudioConstants;
 
 public class JMFMicUI extends CloseableFrame implements CloseableFrameIF {
 

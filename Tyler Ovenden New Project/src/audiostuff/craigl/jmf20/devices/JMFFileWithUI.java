@@ -4,20 +4,24 @@
 
 package audiostuff.craigl.jmf20.devices;
 
-import java.awt.*;
-import java.io.*;
-import java.util.*;
+import java.awt.Rectangle;
 
 // The java media packages
-import javax.media.*;
-import javax.media.control.*;
-import javax.media.format.*;
-import javax.media.format.audio.*;
-import javax.media.protocol.*;
+import javax.media.DataSink;
+import javax.media.Format;
+import javax.media.Manager;
+import javax.media.MediaLocator;
+import javax.media.Processor;
+import javax.media.Time;
+import javax.media.control.TrackControl;
+import javax.media.format.AudioFormat;
+import javax.media.protocol.ContentDescriptor;
+import javax.media.protocol.DataSource;
 
-import audiostuff.craigl.beans.blinker.*;
-import audiostuff.craigl.utils.*;
+import audiostuff.craigl.beans.blinker.Blinker;
 import audiostuff.craigl.jmf20.media.datasink.intfc.Handler;
+import audiostuff.craigl.utils.AbstractAudio;
+import audiostuff.craigl.utils.AudioUIIF;
 
 public class JMFFileWithUI extends JMFFileBase implements JMFFileCallBackIF, AudioUIIF {
 
