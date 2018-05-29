@@ -169,9 +169,9 @@ public class JMFPlayerWithUI extends AbstractAudio {
 				(PullDataSource) Manager.createDataSource(sourceMediaLocator);
 
 			// Set some parameters into the data source
-			((craigl.jmf20.media.protocol.intfc.DataSource) dataSource).setAA(this);
-			((craigl.jmf20.media.protocol.intfc.DataSource) dataSource).setSampleRate(sampleRate);
-			((craigl.jmf20.media.protocol.intfc.DataSource) dataSource).setChannels(channels);
+			((audiostuff.craigl.jmf20.media.protocol.intfc.DataSource) dataSource).setAA(this);
+			((audiostuff.craigl.jmf20.media.protocol.intfc.DataSource) dataSource).setSampleRate(sampleRate);
+			((audiostuff.craigl.jmf20.media.protocol.intfc.DataSource) dataSource).setChannels(channels);
 
 			if (DEBUG)
 				System.out.println("DataSource: " + dataSource);

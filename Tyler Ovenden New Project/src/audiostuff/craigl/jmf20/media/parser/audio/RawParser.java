@@ -190,8 +190,8 @@ public class RawParser implements Demultiplexer {
 		this.streams = streams;
 
 		// Get the sample rate and number of channels from data source 
-		sampleRate = ((craigl.jmf20.media.protocol.intfc.DataSource) source).sampleRate;
-		channels   = ((craigl.jmf20.media.protocol.intfc.DataSource) source).channels;
+		sampleRate = ((audiostuff.craigl.jmf20.media.protocol.intfc.DataSource) source).sampleRate;
+		channels   = ((audiostuff.craigl.jmf20.media.protocol.intfc.DataSource) source).channels;
 
 		positionable = false;
 		seekable = false;
