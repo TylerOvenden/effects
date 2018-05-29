@@ -5,13 +5,25 @@
 
 package audiostuff.craigl.jmf20.media.parser.audio;
 
-import audiostuff.craigl.utils.*;
 import java.io.IOException;
 
-import javax.media.*;
-import javax.media.protocol.*;
-import javax.media.format.Format;
-import javax.media.format.audio.AudioFormat;
+import javax.media.BadHeaderException;
+import javax.media.Buffer;
+import javax.media.Demultiplexer;
+import javax.media.Duration;
+import javax.media.Format;
+import javax.media.IncompatibleSourceException;
+import javax.media.Time;
+import javax.media.Track;
+import javax.media.TrackListener;
+import javax.media.format.AudioFormat;
+import javax.media.protocol.ContentDescriptor;
+import javax.media.protocol.DataSource;
+import javax.media.protocol.PullDataSource;
+import javax.media.protocol.PullSourceStream;
+import javax.media.protocol.SourceStream;
+
+import audiostuff.craigl.utils.AudioConstants;
 
 public class RawParser implements Demultiplexer {
 

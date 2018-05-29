@@ -2,12 +2,12 @@
 // Written by: Craig A. Lindley
 // Last Update: 08/02/98
 
-package craigl.pcmplayer;
+package audiostuff.craigl.pcmplayer;
 
 import javax.media.*;
 import javax.media.protocol.*;
-import craigl.utils.*;
-import craigl.au.*;
+import audiostuff.craigl.utils.*;
+import audiostuff.craigl.au.*;
 
 public class PCMSourceStream implements PullSourceStream {
 

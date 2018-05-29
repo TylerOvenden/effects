@@ -2,10 +2,10 @@
 // Written by: Craig A. Lindley
 // Last Update: 11/11/98
 
-package craigl.pcmplayer;
+package audiostuff.craigl.pcmplayer;
 
 import javax.media.*;
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 /**
  * PCMPlayer class utilizing JMF

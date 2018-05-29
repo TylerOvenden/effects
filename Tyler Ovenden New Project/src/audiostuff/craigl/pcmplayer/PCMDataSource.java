@@ -7,7 +7,7 @@ package audiostuff.craigl.pcmplayer;
 import java.io.*;
 import javax.media.*;
 import javax.media.protocol.*;
-import craigl.utils.*;
+import audiostuff.craigl.utils.*;
 
 public class PCMDataSource extends PullDataSource {
 
