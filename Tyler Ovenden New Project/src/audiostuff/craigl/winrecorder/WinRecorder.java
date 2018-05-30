@@ -22,7 +22,7 @@ public class WinRecorder extends AbstractAudio {
     // Load the WinRecorder interface DLL
     static {
 	    // Load the interface DLL
-		System.loadLibrary("audiostuff/craigl/winrecorder/winrecorderdll");
+		System.loadLibrary("audiostuff/craigl/winrecorder/winrecorderdll"); 
     }
 
 	public WinRecorder(int sampleRate, int numberOfChannels,
