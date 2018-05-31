@@ -63,13 +63,13 @@ public class SoundUtils1 {
 
 		    for (int j=0; j < 1000; j++) {
 		      step = 25;
-		      for(int i=0; i < 1000; i++) {
+		      for(int i=0; i < 100; i++) {
 		        if(i < 1) {
-		          buf[0] = ((i%step > 0) ? 32 : (byte)0);
+		          buf[0] = ((i%step > 0) ? 64 : (byte)0);
 		          if(i%25 == s) step--;
 		        }
 		        else {
-		          buf[0] = ((i%step > 0) ? 32 : (byte)0);
+		          buf[0] = ((i%step > 0) ? 64 : (byte)0);
 		          if(i%50 == t) step++;
 		        }
 		        sdl.write(buf,0,1);
