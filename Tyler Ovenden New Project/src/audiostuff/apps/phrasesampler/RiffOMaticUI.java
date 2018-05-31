@@ -265,7 +265,7 @@ public class RiffOMaticUI extends BaseUI implements CloseableFrameIF {
 	// Call entry point for testing UI
 	public static void main(String [] args) {
 
-		RiffOMaticUI romui = new RiffOMaticUI(null);
+		RiffOMaticUI rom = new RiffOMaticUI(null);
 	}
 	
 	// Private class data

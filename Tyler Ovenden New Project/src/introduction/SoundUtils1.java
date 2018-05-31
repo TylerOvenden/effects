@@ -92,10 +92,12 @@ public class SoundUtils1 {
 
 		    byte[] buf = new byte[1];
 		    Random r = new Random(9);
+		    int s = (int)(Math.random()*8);
+		    int t = (int)(Math.random()*10);
 		    boolean silence = true;
 		    for (int i=0 ; i < 8000 ; i++) {
 		    //for (int i=0 ; i < 8000 ; i++) {
-		      while(r.nextInt() % 13 != 2 || r.nextInt() % 13 == 10) {
+		      while(r.nextInt() % 15 == s || r.nextInt() % 13 != t) {
 		          buf[0] =
 		            silence ? 0 :
 		              (byte)Math.abs(r.nextInt() %
@@ -113,7 +115,7 @@ public class SoundUtils1 {
 
   public static void main(String[] args) throws Exception {
 	//  SoundUtils1.warp(10);	  
-	// SoundUtils1.laser(10);
+	 //SoundUtils1.laser(10);
 
 	  
 	  /* Thread.sleep(1000);
