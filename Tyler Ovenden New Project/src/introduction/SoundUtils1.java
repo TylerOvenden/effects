@@ -61,8 +61,8 @@ public class SoundUtils1 {
 		    int t = (int)(Math.random()*50);
 		    
 
-		    for (int j=0; j < 1000; j++) {
-		      step = 25;
+		    for (int j=0; j < 100; j++) {
+		      step = 1000;
 		      for(int i=0; i < 100; i++) {
 		        if(i < 1) {
 		          buf[0] = ((i%step > 0) ? 64 : (byte)0);
@@ -118,7 +118,7 @@ public class SoundUtils1 {
 		  }
 
   public static void main(String[] args) throws Exception {
-	 SoundUtils1.warp(1);	  
+	 SoundUtils1.warp(10);	  
 	 //SoundUtils1.laser(10);
 
 	  
