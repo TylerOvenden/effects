@@ -63,17 +63,21 @@ public static void warp(int repeat)
 
   byte[] buf = new byte[1];  
   int step;     
-
-  for (int j=0; j < repeat; j++) {  
+  int u = (int)(Math.random()*12)+5;
+  int b = (int)(Math.random()*1000)+1000;
+  int t = (int)(Math.random()*50);
+  int s = (int)(Math.random()*25);
+  
+  for (int j=0; j < u; j++) {  
     step = 25;  
-    for(int i=0; i < 2000; i++) {  
-      if(i < 500) {  
-        buf[0] = ((i%step > 0) ? 32 : (byte)0);  
-        if(i%25 == 0) step--;  
+    for(int i=0; i < b; i++) {  
+      if(i < 600) {  
+        buf[0] = ((i%step > 0) ? 40 : (byte)0);  
+        if(i%25 == s) step--;  
       }  
       else {  
-        buf[0] = ((i%step > 0) ? 16 : (byte)0);  
-        if(i%50 == 0) step++;  
+        buf[0] = ((i%step > 0) ? 40 : (byte)0);  
+        if(i%50 == t) step++;  
       }  
       sdl.write(buf,0,1);  
     }  
@@ -117,12 +121,12 @@ public static void bang()
   sdl.close();  
 }  
 public static void main(String[] args) throws Exception {  
-	for (int i = 0; i<8; i++) {
-	SoundUtils2.laser(5);
-	Thread.sleep(1000);}
-	//SoundUtils2.laser(5); 
-	//  SoundUtils2.warp(10);  
-	  Thread.sleep(1000);  
+	//for (int i = 0; i<8; i++) {
+    //	  SoundUtils2.laser(5);
+		//Thread.sleep(1000); }
+	for(int i = 0; i<8;i++) {
+	 SoundUtils2.warp(10);  
+	  Thread.sleep(1000);  }
 	  //SoundUtils2.bang();  
 	}  
 
