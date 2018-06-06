@@ -28,7 +28,7 @@ public static void laser(int repeat)
 
   int s = (int)(Math.random()*steps);
   int u = (int)(Math.random()*12)+5;
-  int v = (int)(Math.random()*3500)+800;
+  int v = (int)(Math.random()*3900)+800;
 
   int t = (int)(Math.random()*250);
 
@@ -125,7 +125,7 @@ public static void main(String[] args) throws Exception {
     //	  SoundUtils2.laser(5);
 		//Thread.sleep(1000); }
 	for(int i = 0; i<8;i++) {
-	 SoundUtils2.warp(10);  
+	 SoundUtils2.laser(10);  
 	  Thread.sleep(1000);  }
 	  //SoundUtils2.bang();  
 	}  
