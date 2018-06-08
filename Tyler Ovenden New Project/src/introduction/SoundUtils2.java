@@ -64,9 +64,9 @@ public static void warp(int repeat)
 
   byte[] buf = new byte[1];  
   int step;     
-  int u = (int)(Math.random()*12)+5;
+  int u = (int)(Math.random()*12)+6;
   int b = (int)(Math.random()*1000)+1000;
-  int t = (int)(Math.random()*50);
+  int t = (int)(Math.random()*80);
   int s = (int)(Math.random()*25);
   Random random = new Random();
   System.out.println(random.nextBoolean());
@@ -75,18 +75,19 @@ public static void warp(int repeat)
     step = 25;  
     for(int i=0; i < b; i++) {  
       if(i < 600) {  
-        buf[0] = ((i%step > 0) ? 40 : (byte)0);  
-        if(i%25 == s)
-        	if(random.nextBoolean() == true)
+        buf[0] = ((i%step > 3) ? 10 : (byte)0);  
+        if(i%25 == s) {
+        	if(random.nextBoolean() == false)
         	step++;  
         	else{
         	step--;	
         	}
+        }	
       }  
       else {  
-        buf[0] = ((i%step > 0) ? 40 : (byte)0);  
+        buf[0] = ((i%step > 5) ? 10 : (byte)0);  
         if(i%50 == t) {
-        	if(random.nextBoolean() == true)
+        	if(random.nextBoolean() == false)
         	step--;  
         	else{
         	step++;	
@@ -124,7 +125,7 @@ public static void bang()
         buf[0] =   
           silence ? 0 :   
             (byte)r.nextInt(  
-                (int)(1 + 63 * (1 + Math.cos(i  
+                (int)(1 + 4 * (1 + Math.cos(i  
                     * Math.PI / 8000))));  
         i++;  
         sdl.write(buf,0,1);  
