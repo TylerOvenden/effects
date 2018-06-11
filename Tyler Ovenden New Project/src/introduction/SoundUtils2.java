@@ -147,12 +147,12 @@ SoundUtils2.warp(10);
  * 
  * 
  *  JButton c=new JButton("Click to test");  
-    c.setBounds(50,100,95,30);  
+    c.setBounds(250,100,95,30);  
     c.addActionListener(new ActionListener(){  
-public void actionPerformed(ActionEvent e){  
-	for(int i = 0; i<8;i++) {
+public void actionPerformed1(ActionEvent e){  
+	for(int j = 0; j<8;j++) {
 		try {
-			SoundUtils2.warp(10);
+			SoundUtils2.laser(10);
 		} catch (LineUnavailableException | InterruptedException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -192,6 +192,7 @@ public void actionPerformed(ActionEvent e){
         }  
 
     });  
+    
     f.add(b);
     f.setSize(400,400);  
     f.setLayout(null);  
