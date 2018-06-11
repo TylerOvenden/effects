@@ -3,6 +3,8 @@ package introduction;
 //jdk1.3  
 import javax.sound.sampled.*;  
 import java.util.Random;  
+import javax.swing.*;    
+import java.awt.event.*;  
 
 public class SoundUtils2 {  
 
@@ -75,7 +77,7 @@ public static void warp(int repeat)
     step = 25;  
     for(int i=0; i < b; i++) {  
       if(i < 600) {  
-        buf[0] = ((i%step > 3) ? 10 : (byte)0);  
+        buf[0] = ((i%step > 3) ? 30 : (byte)0);  
         if(i%25 == s) {
         	if(random.nextBoolean() == false)
         	step++;  
@@ -85,7 +87,7 @@ public static void warp(int repeat)
         }	
       }  
       else {  
-        buf[0] = ((i%step > 5) ? 10 : (byte)0);  
+        buf[0] = ((i%step > 5) ? 30 : (byte)0);  
         if(i%50 == t) {
         	if(random.nextBoolean() == false)
         	step--;  
@@ -136,12 +138,41 @@ public static void bang()
   sdl.stop();  
   sdl.close();  
 }  
-public static void main(String[] args) throws Exception {  
+/*
+ * for(int i = 0; i<8;i++) {
+SoundUtils2.warp(10);  
+  Thread.sleep(1000);  }
+  //SoundUtils2.bang();  
+ * 
+ */
 
+public static void main(String[] args) {  
+    JFrame f=new JFrame("test");  
+   
+  
+    JButton b=new JButton("Click to test");  
+    b.setBounds(50,100,95,30);  
+    b.addActionListener(new ActionListener(){  
+public void actionPerformed(ActionEvent e){  
 	for(int i = 0; i<8;i++) {
-	SoundUtils2.warp(10);  
-	  Thread.sleep(1000);  }
-	  //SoundUtils2.bang();  
-	}  
-
+		try {
+			SoundUtils2.warp(10);
+		} catch (LineUnavailableException | InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}  
+		  try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}  }
+		  //SoundUtils2.bang();  
+        }  
+    });  
+    f.add(b);
+    f.setSize(400,400);  
+    f.setLayout(null);  
+    f.setVisible(true);   
 }  
+} 
