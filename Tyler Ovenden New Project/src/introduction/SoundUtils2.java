@@ -144,6 +144,27 @@ SoundUtils2.warp(10);
   Thread.sleep(1000);  }
   //SoundUtils2.bang();  
  * 
+ * 
+ * 
+ *  JButton c=new JButton("Click to test");  
+    c.setBounds(50,100,95,30);  
+    c.addActionListener(new ActionListener(){  
+public void actionPerformed(ActionEvent e){  
+	for(int i = 0; i<8;i++) {
+		try {
+			SoundUtils2.warp(10);
+		} catch (LineUnavailableException | InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}  
+		  try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}  }
+		  //SoundUtils2.bang();  
+        }  
  */
 
 public static void main(String[] args) {  
@@ -169,6 +190,7 @@ public void actionPerformed(ActionEvent e){
 		}  }
 		  //SoundUtils2.bang();  
         }  
+
     });  
     f.add(b);
     f.setSize(400,400);  
