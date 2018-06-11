@@ -171,7 +171,7 @@ public static void main(String[] args) {
     JFrame f=new JFrame("test");  
    
   
-    JButton b=new JButton("Click to test");  
+    JButton b=new JButton("warp");  
     b.setBounds(50,100,95,30);  
     b.addActionListener(new ActionListener(){  
 public void actionPerformed(ActionEvent e){  
