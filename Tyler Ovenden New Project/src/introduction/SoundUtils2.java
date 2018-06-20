@@ -197,5 +197,34 @@ public void actionPerformed(ActionEvent e){
     f.setSize(400,400);  
     f.setLayout(null);  
     f.setVisible(true);   
+ 
+
+    JButton c=new JButton("laser");  
+    c.setBounds(150,200,95,30);  
+    c.addActionListener(new ActionListener(){  
+public void actionPerformed(ActionEvent e){  
+	for(int j = 0; j<8;j++) {
+		try {
+			SoundUtils2.laser(10);
+		} catch (LineUnavailableException | InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}  
+		  try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}  }
+		  //SoundUtils2.bang();  
+        }  
+
+    });  
+    
+    f.add(c);
+    f.setSize(400,400);  
+    f.setLayout(null);  
+    f.setVisible(true);   
 }  
+
 } 
