@@ -12,7 +12,7 @@ public static float SAMPLE_RATE = 8000f;
 
 public static void laser(int repeat)   
   throws LineUnavailableException, InterruptedException  
-{  
+{   
   AudioFormat af =   
     new AudioFormat(  
         SAMPLE_RATE, // sampleRate  
